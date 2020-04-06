@@ -398,3 +398,10 @@ function getFirstValue(...args) {
 }
 var arr = [1, 2, 4, 8, 16, 32, 64, 128]
 getFirstValue(...arr)
+
+//js-function-2
+function charIndex(...args) {
+    console.log(...args[1, 2]);  
+}
+charIndex(hello)
+
