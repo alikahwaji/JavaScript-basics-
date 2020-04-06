@@ -372,6 +372,8 @@ for (var i = john.length - 1; i >= 0; i--) {
 */
 
 // js-function-1
-function getFirstValue(...args) { console.log(args[0]); }
-var arr = [ 1, 2, 4, 8, 16, 32, 64, 128 ]
-getFirstValue(...arr)
+function getFirstValue(...args) {
+  console.log(args[0]);
+}
+var arr = [1, 2, 4, 8, 16, 32, 64, 128];
+getFirstValue(...arr);
