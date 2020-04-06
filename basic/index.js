@@ -1,6 +1,6 @@
 /*****************************
-* Variables and data types
-*/
+ * Variables and data types
+ */
 /*
 var firstName = 'John';
 console.log(firstName);
@@ -18,11 +18,9 @@ var johnMark = 'John and MArk';
 var if = 23;
 */
 
-
-
 /*****************************
-* Variable mutation and type coercion
-*/
+ * Variable mutation and type coercion
+ */
 /*
 var firstName = 'John';
 var age = 28;
@@ -31,20 +29,19 @@ console.log(firstName + ' ' + age);
 var job, isMarried;
 job = 'teacher';
 isMarried = false;
-console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married?
+' + isMarried);
 // Variable mutation
 age = 'twenty eight';
 job = 'driver';
-alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
-var lastName = prompt('What is his last Name?');
+alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' +
+isMarried); var lastName = prompt('What is his last Name?');
 console.log(firstName + ' ' + lastName);
 */
 
-
-
 /*****************************
-* Basic operators
-*/
+ * Basic operators
+ */
 /*
 var year, yearJohn, yearMark;
 now = 2018;
@@ -68,11 +65,9 @@ var x;
 console.log(typeof x);
 */
 
-
-
 /*****************************
-* Operator precedence
-*/
+ * Operator precedence
+ */
 /*
 var now = 2018;
 var yearJohn = 1989;
@@ -99,8 +94,8 @@ console.log(x);
 */
 
 /*****************************
-* If / else statements
-*/
+ * If / else statements
+ */
 /*
 var firstName = 'John';
 var civilStatus = 'single';
@@ -128,11 +123,9 @@ if (BMIMark > BMIJohn) {
 }
 */
 
-
-
 /*****************************
-* Boolean logic
-*/
+ * Boolean logic
+ */
 /*
 var firstName = 'John';
 var age = 20;
@@ -147,18 +140,15 @@ if (age < 13) {
 }
 */
 
-
-
 /*****************************
-* The Ternary Operator and Switch Statements
-*/
+ * The Ternary Operator and Switch Statements
+ */
 /*
 var firstName = 'John';
 var age = 14;
 // Ternary operator
-age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
-var drink = age >= 18 ? 'beer' : 'juice';
-console.log(drink);
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + '
+drinks juice.'); var drink = age >= 18 ? 'beer' : 'juice'; console.log(drink);
 (if (age >= 18) {
     var drink = 'beer';
 } else {
@@ -196,11 +186,9 @@ switch (true) {
 }
 */
 
-
-
 /*****************************
-* Truthy and Falsy values and equality operators
-*/
+ * Truthy and Falsy values and equality operators
+ */
 /*
 // falsy values: undefined, null, 0, '', NaN
 // truthy values: NOT falsy values
@@ -217,8 +205,6 @@ if (height === '23') {
 }
 */
 
-
-
 /*****************************
 
 * Functions
@@ -234,24 +220,22 @@ console.log(ageJohn, ageMike, ageJane);
 function yearsUntilRetirement(year, firstName) {
     var age = calculateAge(year);
     var retirement = 65 - age;
-    
+
     if (retirement > 0) {
         console.log(firstName + ' retires in ' + retirement + ' years.');
     } else {
         console.log(firstName + ' is already retired.')
     }
-    
+
 }
 yearsUntilRetirement(1990, 'John');
 yearsUntilRetirement(1948, 'Mike');
 yearsUntilRetirement(1969, 'Jane');
 */
 
-
-
 /*****************************
-* Function Statements and Expressions
-*/
+ * Function Statements and Expressions
+ */
 /*
 // Function declaration
 // function whatDoYouDo(job, firstName) {}
@@ -273,11 +257,9 @@ console.log(whatDoYouDo('designer', 'Jane'));
 console.log(whatDoYouDo('retired', 'Mark'));
 */
 
-
-
 /*****************************
-* Arrays
-*/
+ * Arrays
+ */
 /*
 // Initialize new array
 var names = ['John', 'Mark', 'Jane'];
@@ -298,13 +280,13 @@ john.pop();
 john.shift();
 console.log(john);
 console.log(john.indexOf(23));
-var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
-console.log(isDesigner);
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' :
+'John IS a designer'; console.log(isDesigner);
 */
 
 /*****************************
-* Objects and properties
-*/
+ * Objects and properties
+ */
 /*
 // Object literal
 var john = {
@@ -330,11 +312,9 @@ jane['lastName'] = 'Smith';
 console.log(jane);
 */
 
-
-
 /*****************************
-* Objects and methods
-*/
+ * Objects and methods
+ */
 /*
 var john = {
     firstName: 'John',
@@ -351,10 +331,9 @@ john.calcAge();
 console.log(john);
 */
 
-
 /*****************************
-* Loops and iteration
-*/
+ * Loops and iteration
+ */
 
 /*
 // for loop
@@ -392,4 +371,9 @@ for (var i = john.length - 1; i >= 0; i--) {
 }
 */
 
-/*****************************
+// js-function-1
+function getFirstValue(...args) {
+  console.log(args[0]);
+}
+var arr = [1, 2, 4, 8, 16, 32, 64, 128];
+getFirstValue(...arr);
